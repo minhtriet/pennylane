@@ -807,7 +807,7 @@ class Operator(abc.ABC):
         """
         raise SparseMatrixUndefinedError
 
-    def sparse_matrix(self, wire_order=None):
+    def sparse_matrix(self, wire_order=None, format='csr'):
         r"""Representation of the operator as a sparse matrix in the computational basis.
 
         If ``wire_order`` is provided, the numerical representation considers the position of the
